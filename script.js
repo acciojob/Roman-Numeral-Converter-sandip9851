@@ -7,6 +7,15 @@ function convertToRoman(num) {
       4:['X', 10], 
       5:['V', 5], 
       6:['I', 1]
+
+		let ans = " ";
+	for(let i in obj){
+		while(num>=obj[t][1]){
+			ans += obj[t][0];
+			num -= obj[t][1]
+		}
+	}
+	return ans;
     };
 
   //your code here
